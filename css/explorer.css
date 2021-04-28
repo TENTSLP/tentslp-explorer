@@ -76,34 +76,42 @@ a {
 a:hover, a.txid:hover, a.tokenid:hover { text-decoration: underline; }
 
 .button {
+
+    margin: 0;
+    overflow: visible;
+    font: inherit;
+    color: inherit;
+    -webkit-appearance: none;
+    border-radius: 0;
     display: inline-block;
-    font-weight: 700;
-    text-align: center;
-    white-space: nowrap;
-    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0 38px;
     vertical-align: middle;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .75rem 1.5rem;
-    font-size: .8rem;
-    background-color: #60bd6c;
-    color: #FFF;
-    line-height: 1.5;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 50px;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    font-size: 14px;
+    line-height: 46px;
+    text-align: center;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+    transition-property: color,background-color,background-position,border-color,box-shadow;
+    text-transform: none;
+    letter-spacing: .5px;
+    border-radius: 500px;
+    background-origin: border-box;
+    background-color: #9900d0;
+    color: #fff;
+    border: 2px solid transparent;
+    background-image: linear-gradient(45deg,#9900d0 40%,#00c3e5);
 }
 .button:hover {
-    text-decoration: none;
-    background-color: #6fda7d;
+    background-color: #8600b7;
+    color: #fff;
+    border-color: transparent;
+    background-image: linear-gradient(45deg,#9900d0 20%,#00c3e5);
+    box-shadow: 0 0 30px 0 rgb(153 0 208 / 50%);
 }
 .button-large {
-    padding: 1rem 2rem;
-    margin-top: 2em;
+    padding: 0.5rem 2.5rem;
+    margin-top: 1em;
 }
 
 .button-hamburger {
@@ -242,9 +250,13 @@ header li input::placeholder {
     text-align: center;
     margin: auto;
     background: url('/img/bg-header-infobox.png') no-repeat;
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
     background-color: #07212b;
     padding: 60px 5% 100px 5%;
+    background-position: bottom center;
 }
 
 .header_infobox img {
@@ -272,6 +284,8 @@ header li input::placeholder {
     font-size: 0.85em;
     font-weight:500;
     margin-bottom: 35px;
+    padding-top: 10px;
+    color: #fff;
 }
 
 .header_infobox input[type=text] {
@@ -300,9 +314,9 @@ header li input::placeholder {
     -ms-transition: background 0.25s;
     -o-transition: background 0.25s;
     transition: background 0.25s;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(96,189,108,1);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(96,189,108,1);
-    box-shadow: 0px 0px 20px 0px rgba(96,189,108,1);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(101,035,148,1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(101,035,148,1);
+    box-shadow: 0px 0px 20px 0px rgba(101,035,148,1);
 }
 
 /* Tables */
@@ -353,7 +367,7 @@ tr.burnt-tx {
 
 .pagination {
   display: inline-block;
-  padding: 0;
+  padding: 3px 0px 0px 0px;
   margin: 8px 0;
   border-radius: 0;
   text-align: center;
@@ -404,7 +418,7 @@ tr.burnt-tx {
 }
 
 .autocomplete-suggestions {
-    background-color:#010608;
+    background-color:rgba(255, 255, 255, 0.5);
     color:#fff;
     padding: 10px 10px;
     border-bottom-left-radius: 5px;
@@ -429,7 +443,7 @@ tr.burnt-tx {
 }
 
 .autocomplete-selected {
-    background-color:#04171f;
+    rgba(255, 255, 255, 0.7);
 }
 
 .autocomplete-group {
@@ -442,7 +456,7 @@ tr.burnt-tx {
 .autocomplete-suggestion {
     padding: 1rem;
     font-size: 14px;
-    border-bottom:1px solid rgb(15, 19, 18);
+    border-bottom:1px solid rgb(255, 255, 255, 0.1);
 }
 
 .dataTables_info {
