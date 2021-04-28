@@ -232,7 +232,7 @@ app.util = {
     y_title='Transactions',
     time_period=60*60*24*30*1000,
     split_time_period=60*60*24*1000,
-    line_type='hvh',
+    line_type='hvh'    
   ) => {
     for (let o of usage.c) {
       o.block_epoch = new Date(o.block_epoch * 1000);
@@ -297,7 +297,10 @@ app.util = {
           fill: 'tonexty',
           type: 'scatter',
           name: 'Daily',
-          line: { shape: line_type }, // maybe we're not ready for curves yet
+          line: {
+            color: 'rgb(7, 170, 208)',
+            shape: line_type 
+          }, // maybe we're not ready for curves yet
         }
       ], {
         yaxis: {
@@ -2210,7 +2213,7 @@ app.init_index_page = () =>
             type: 'bar',
             marker: {
               color: token_usage_monthly.map((v, i) =>
-                (i < token_usage_monthly.length-1) ? 'rgba(100, 167, 205, 1)'
+                (i < token_usage_monthly.length-1) ? 'rgba(7, 170, 208, 0.8)'
                                                    : 'rgba(232, 102, 102, 1)'
               ),
             },
@@ -3048,7 +3051,7 @@ app.init_token_page = (tokenIdHex) =>
           data.push({
             address: a.address.split(':')[1],
             token_balance: a.token_balance,
-            color: "rgba(100, 167, 205, 1)"
+            color: "rgba(7, 170, 208, 0.8)"
           });
         }
 
