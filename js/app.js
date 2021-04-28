@@ -3469,26 +3469,26 @@ app.router = (whash, push_history = true) => {
   switch (path) {
     case '':
     case '#':
-      document.title = 'TENTSLP Explorer';
+      document.title = 'TENT Tokens Explorer';
       method = () => {
           $('html').addClass('index-page');
           return app.init_index_page();
       };
       break;
     case '#alltokens':
-      document.title = 'All Tokens - TENTSLP Explorer';
+      document.title = 'All Tokens - TENT Tokens Explorer';
       method = () => app.init_all_tokens_page();
       break;
     case '#tx':
-      document.title = 'Transaction ' + key[0] + ' - TENTSLP Explorer';
+      document.title = 'Transaction ' + key[0] + ' - TENT Tokens Explorer';
       method = () => app.init_tx_page(key[0], key.slice(1));
       break;
     case '#bchtx':
-      document.title = 'TENT Transaction ' + key[0] + ' - TENTSLP Explorer';
+      document.title = 'TENT Transaction ' + key[0] + ' - TENT Tokens Explorer';
       method = () => app.init_nonslp_tx_page(key[0], key.slice(1));
       break;
     case '#block':
-      document.title = 'Block ' + key[0] + ' - TENTSLP Explorer';
+      document.title = 'Block ' + key[0] + ' - TENT Tokens Explorer';
       if (key[0] === 'mempool') {
         method = () => app.init_block_mempool_page();
       } else {
@@ -3496,15 +3496,15 @@ app.router = (whash, push_history = true) => {
       }
       break;
     case '#token':
-      document.title = 'Token ' + key[0] + ' - TENTSLP Explorer';
+      document.title = 'Token ' + key[0] + ' - TENT Tokens Explorer';
       method = () => app.init_token_page(key[0]);
       break;
     case '#address':
-      document.title = 'Address ' + key[0] + ' - TENTSLP Explorer';
+      document.title = 'Address ' + key[0] + ' - TENT Tokens Explorer';
       method = () => app.init_address_page(key[0]);
       break;
     default:
-      document.title = '404 | TENTSLP Explorer';
+      document.title = '404 | TENT Tokens Explorer';
       console.error('app.router path not found', whash);
       method = () => app.init_404_page();
       break;

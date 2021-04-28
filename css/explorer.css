@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Buttons and Links */
 a {
-    color: #60bd6c;
+    color: #9900d0;
     text-decoration: none;
     outline: none;
 }
@@ -255,7 +255,7 @@ header li input::placeholder {
     font-size: 3.2em;
     font-weight: 700;
     margin-bottom: .5em;
-    color: #60bd6c;
+    color: #ffffff;
 }
 
 .header_infobox h2 {
@@ -317,7 +317,7 @@ th, td {
 }
   
 tr:nth-child(even) {
-    background-color: #eaeaea;
+    background-color: #f8f8f8;
 }
 tr:nth-child(odd) {
     background-color: #fff;
@@ -377,7 +377,7 @@ tr.burnt-tx {
 }
 
 .pagination li.active a {
-  background-color: #60bd6c;
+  background-color: #9900d0;
   color: #FFF;
 }
 
@@ -527,7 +527,7 @@ html.full-width .row {
     width: 73px;
     height: 5px;
     margin-top: 6px;
-    background-color: #5dbc6c;
+    background-color: #9900d0;
 }
 
 .col-sm-12 {
@@ -564,7 +564,7 @@ html.full-width .row {
 }
 
 footer {
-    background-color: #07212b;
+    background-color: #000;
     padding: 40px 3%;
     color: #fff;
     margin-top: 3rem;
@@ -807,7 +807,7 @@ html.index-page header {
 .plot-time-selector .active {
     text-decoration:underline;
     font-weight:bold;
-    color: #60bd6c;
+    color: #9900d0;
 }
 .plot-time-selector span {
     margin: 0 10px;
