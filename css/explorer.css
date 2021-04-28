@@ -259,6 +259,12 @@ header li input::placeholder {
     background-position: bottom center;
 }
 
+@media (max-width:640px){.header_infobox {
+    background-position-x: center;
+    background-position-y: -44vh;
+    background-size: auto 165vh;
+}}
+
 .header_infobox img {
     width: 120px;
 }
@@ -418,15 +424,17 @@ tr.burnt-tx {
 }
 
 .autocomplete-suggestions {
-    background-color:rgba(255, 255, 255, 0.5);
-    color:#fff;
-    padding: 10px 10px;
+    background-color:rgba(255, 255, 255);
+    color:#000000;
+    padding: 10px 10px 20px 10px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     width: 100%;
     box-sizing: border-box;
     font-family: 'Source Code Pro', monospace;
-    overflow:scroll;
+    overflow:hidden;
 }
 
 .header_infobox .suggestions-container img {
@@ -443,7 +451,7 @@ tr.burnt-tx {
 }
 
 .autocomplete-selected {
-    background-color:rgba(255, 255, 255, 0.7);
+    background-color:rgba(007, 170, 208, 0.1);
 }
 
 .autocomplete-group {
@@ -456,7 +464,7 @@ tr.burnt-tx {
 .autocomplete-suggestion {
     padding: 1rem;
     font-size: 14px;
-    border-bottom:1px solid rgb(255, 255, 255, 0.1);
+    border-bottom:1px solid rgb(007, 170, 208, 0.1);
 }
 
 .dataTables_info {
