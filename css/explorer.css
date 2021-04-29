@@ -261,7 +261,7 @@ header li input::placeholder {
 
 @media (max-width: 640px){
 .header_infobox {
-    background: url(img/bg-header-mobile.png) no-repeat;
+    background: url('img/bg-header-mobile.png') no-repeat;
     background-position: top center;
 }}
 
