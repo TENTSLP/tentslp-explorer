@@ -265,6 +265,12 @@ header li input::placeholder {
     background-position: top center;
 }}
 
+@media (min-width:1920px){
+.header_infobox {
+    background: url('/img/bg-header-wide.png');
+    background-position: top center;
+}}
+
 .header_infobox img {
     width: 120px;
     margin-bottom: -25px;
@@ -312,6 +318,7 @@ header li input::placeholder {
     -ms-transition: background 0.25s;
     -o-transition: background 0.25s;
     transition: background 0.25s;
+    max-width: 650px;
 }
 
 .header_infobox input[type=text]:active, .header_infobox input[type=text]:focus {
