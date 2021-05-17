@@ -666,9 +666,9 @@ app.util = {
   cash_address_to_raw_address: (address) => {
     let source_value = address;
     switch (address.split(':')[0]) {
-      case 'bitcoincash': break;
-      case 'bchtest': break;
-      default: source_value = 'bitcoincash:'+address;
+      case 'tt': break;
+      case 'ttest': break;
+      default: source_value = 'tt:'+address;
     }
 
     const raw = bchaddr.decodeAddress(source_value);
