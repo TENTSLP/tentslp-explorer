@@ -21,12 +21,12 @@ public/dist/combined.js: build/unpkg.com/core-js-bundle@3.6.5/minified.js \
 	build/cdn.jsdelivr.net/npm/jdenticon@2.1.1 \
 	build/cdnjs.cloudflare.com/ajax/libs/bignumber.js/9.0.0/bignumber.min.js \
 	build/cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js \
-	build/unpkg.com/bchaddrjs-slp@0.2.8/dist/bchaddrjs-slp-0.2.8.min.js \
 	build/unpkg.com/cytoscape@3.14.1/dist/cytoscape.min.js \
 	build/unpkg.com/klayjs@0.4.1/klay.js \
 	build/unpkg.com/clipboard@2.0.1/dist/clipboard.min.js \
 	build/unpkg.com/i18next@19.4.1/dist/umd/i18next.min.js \
 	build/unpkg.com/i18next-browser-languagedetector@4.0.2/i18nextBrowserLanguageDetector.min.js \
+	src/lib/bchaddrjs-slp-0.2.12.min.js \
 	src/lib/cytoscape-klay.js \
 	src/lib/buffer.min.js \
 	src/lib/qrcode.min.js \
@@ -63,9 +63,6 @@ build/cdnjs.cloudflare.com/ajax/libs/bignumber.js/9.0.0/bignumber.min.js:
 
 build/cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js:
 	$(CURL) https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js -o $@
-
-build/unpkg.com/bchaddrjs-slp@0.2.8/dist/bchaddrjs-slp-0.2.8.min.js:
-	$(CURL) https://unpkg.com/bchaddrjs-slp@0.2.8/dist/bchaddrjs-slp-0.2.8.min.js -o $@
 
 build/unpkg.com/cytoscape@3.14.1/dist/cytoscape.min.js:
 	$(CURL) https://unpkg.com/cytoscape@3.14.1/dist/cytoscape.min.js -o $@
