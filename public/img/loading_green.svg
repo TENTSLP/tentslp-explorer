@@ -1,1 +1,108 @@
-<svg width="200px"  height="200px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-double-ring" style="background: none;"><circle cx="50" cy="50" ng-attr-r="{{config.radius}}" ng-attr-stroke-width="{{config.width}}" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-dasharray="{{config.dasharray}}" fill="none" stroke-linecap="round" r="40" stroke-width="4" stroke="#1d7220" stroke-dasharray="62.83185307179586 62.83185307179586" transform="rotate(136.286 50 50)"><animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="2.2s" begin="0s" repeatCount="indefinite"></animateTransform></circle><circle cx="50" cy="50" ng-attr-r="{{config.radius2}}" ng-attr-stroke-width="{{config.width}}" ng-attr-stroke="{{config.c2}}" ng-attr-stroke-dasharray="{{config.dasharray2}}" ng-attr-stroke-dashoffset="{{config.dashoffset2}}" fill="none" stroke-linecap="round" r="35" stroke-width="4" stroke="#56d27d" stroke-dasharray="54.97787143782138 54.97787143782138" stroke-dashoffset="54.97787143782138" transform="rotate(-136.286 50 50)"><animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;-360 50 50" keyTimes="0;1" dur="2.2s" begin="0s" repeatCount="indefinite"></animateTransform></circle></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200px"
+   height="200px"
+   viewBox="0 0 100 100"
+   preserveAspectRatio="xMidYMid"
+   class="lds-double-ring"
+   style="background: none;"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="loading_green.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="4.72"
+     inkscape:cx="67.34039"
+     inkscape:cy="95.104227"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <circle
+     cx="50"
+     cy="50"
+     ng-attr-r="{{config.radius}}"
+     ng-attr-stroke-width="{{config.width}}"
+     ng-attr-stroke="{{config.c1}}"
+     ng-attr-stroke-dasharray="{{config.dasharray}}"
+     fill="none"
+     stroke-linecap="round"
+     r="40"
+     stroke-width="4"
+     stroke="#1d7220"
+     stroke-dasharray="62.83185307179586 62.83185307179586"
+     transform="rotate(136.286 50 50)"
+     id="circle2"
+     style="stroke:#07aad0;stroke-opacity:1">
+    <animateTransform
+       attributeName="transform"
+       type="rotate"
+       calcMode="linear"
+       values="0 50 50;360 50 50"
+       keyTimes="0;1"
+       dur="2.2s"
+       begin="0s"
+       repeatCount="indefinite" />
+  </circle>
+  <circle
+     cx="50"
+     cy="50"
+     ng-attr-r="{{config.radius2}}"
+     ng-attr-stroke-width="{{config.width}}"
+     ng-attr-stroke="{{config.c2}}"
+     ng-attr-stroke-dasharray="{{config.dasharray2}}"
+     ng-attr-stroke-dashoffset="{{config.dashoffset2}}"
+     fill="none"
+     stroke-linecap="round"
+     r="35"
+     stroke-width="4"
+     stroke="#56d27d"
+     stroke-dasharray="54.97787143782138 54.97787143782138"
+     stroke-dashoffset="54.97787143782138"
+     transform="rotate(-136.286 50 50)"
+     id="circle4"
+     style="stroke:#9900d0;stroke-opacity:1">
+    <animateTransform
+       attributeName="transform"
+       type="rotate"
+       calcMode="linear"
+       values="0 50 50;-360 50 50"
+       keyTimes="0;1"
+       dur="2.2s"
+       begin="0s"
+       repeatCount="indefinite" />
+  </circle>
+</svg>

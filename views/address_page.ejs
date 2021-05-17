@@ -11,8 +11,8 @@
         <%= address %>
         <button class="copybtn" data-clipboard-text="<%= bchaddr.toSlpAddress(address) %>"></button>
       </h6>
-      <a target="_blank" href="https://testnet-explorer.tent.app/address/<%= address %>">
-        <button type="button" class="button right" data-i18n="view_on_bch_explorer"></button>
+      <a target="_blank" href="https://testnet-explorer.tent.app/address/<%= bchaddr.toLegacyAddress(address) %>">
+        <button type="button" class="button right" data-i18n="view_on_tent_explorer"></button>
       </a>
     </div>
   </div>
@@ -35,23 +35,10 @@
               </td>
             </tr>
             <tr>
-              <th role="col" data-i18n="cash_address"></th>
-              <td>
-                <%= bchaddr.toCashAddress(address) %>
-                <button class="copybtn" data-clipboard-text="<%= bchaddr.toCashAddress(address) %>"></button>
-              </td>
-            </tr>
-            <tr>
-              <th role="col" data-i18n="legacy_address"></th>
+              <th role="col" data-i18n="tent_address"></th>
               <td>
                 <%= bchaddr.toLegacyAddress(address) %>
                 <button class="copybtn" data-clipboard-text="<%= bchaddr.toLegacyAddress(address) %>"></button>
-              </td>
-            </tr>
-            <tr>
-              <th role="col" data-i18n="cash_account"></th>
-              <td>
-                <%- cashaccount_html %>
               </td>
             </tr>
             <tr>

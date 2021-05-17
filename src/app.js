@@ -70,35 +70,11 @@ app.template = Object.fromEntries(Object.entries({
 }).map(([k, v]) => ([k, ejs.compile(v)])));
 
 import translation_en from '../lang/en.json';
-import translation_zh from '../lang/zh.json';
-import translation_hi from '../lang/hi.json';
-import translation_es from '../lang/es.json';
-import translation_ru from '../lang/ru.json';
-import translation_ko from '../lang/ko.json';
-import translation_ms from '../lang/ms.json';
-import translation_ja from '../lang/ja.json';
-import translation_bn from '../lang/bn.json';
-import translation_yo from '../lang/yo.json';
-import translation_fil from '../lang/fil.json';
-import translation_pt from '../lang/pt.json';
-import translation_tr from '../lang/tr.json';
 const i18next_config = {
   fallbackLng: 'en',
   debug: false,
   resources: {
     'en':    { translation: JSON.parse(translation_en) },
-    'zh':    { translation: JSON.parse(translation_zh) },
-    'hi':    { translation: JSON.parse(translation_hi) },
-    'es':    { translation: JSON.parse(translation_es) },
-    'ru':    { translation: JSON.parse(translation_ru) },
-    'ko':    { translation: JSON.parse(translation_ko) },
-    'ms':    { translation: JSON.parse(translation_ms) },
-    'ja':    { translation: JSON.parse(translation_ja) },
-    'bn':    { translation: JSON.parse(translation_bn) },
-    'yo':    { translation: JSON.parse(translation_yo) },
-    'fil':   { translation: JSON.parse(translation_fil) },
-    'pt':    { translation: JSON.parse(translation_pt) },
-    'tr':    { translation: JSON.parse(translation_tr) },
   },
 };
 
@@ -369,7 +345,7 @@ app.util = {
     y_title=i18next.t('transactions'),
     time_period=60*60*24*30*1000,
     split_time_period=60*60*24*1000,
-    line_type='hvh',
+    line_type='hvh'
   ) => {
     for (const o of usage.c) {
       o.block_epoch = new Date(o.block_epoch * 1000);
@@ -421,7 +397,10 @@ app.util = {
           fill: 'tonexty',
           type: 'scatter',
           name: 'Daily',
-          line: {shape: line_type}, // maybe we're not ready for curves yet
+          line: {
+            color: 'rgb(7, 170, 208)',
+            shape: line_type
+          }, // maybe we're not ready for curves yet
         },
       ], {
         yaxis: {
@@ -2786,7 +2765,7 @@ app.init_error_notx_page = (txid) => new Promise((resolve, reject) => {
   $('main[role=main]').html(app.template.error_notx_page({
     txid: txid,
   }));
-  app.util.set_meta_description(`This transaction was not found in SLPDB or BitDB. It may have been very old or mispelled.`);
+  app.util.set_meta_description(`This transaction was not found in TENTSLPDB or BitDB. It may have been very old or mispelled.`);
   resolve();
 });
 
@@ -2910,7 +2889,7 @@ app.init_index_page = () =>
             type: 'bar',
             marker: {
               color: token_usage_monthly.map((v, i) =>
-                (i < token_usage_monthly.length-1) ? 'rgba(100, 167, 205, 1)' :
+                (i < token_usage_monthly.length - 1) ? 'rgba(7, 170, 208, 0.8)' :
                                                    'rgba(232, 102, 102, 1)',
               ),
             },
@@ -3162,7 +3141,7 @@ app.init_all_tokens_page = () =>
 
 app.init_dividend_page = () => new Promise((resolve, reject) => {
   $('main[role=main]').html(app.template.dividend_page());
-  app.util.set_meta_description(`Calculate Bitcoin Cash Dividend Payments to SLP Tokens`);
+  app.util.set_meta_description(`Calculate TENT Dividend Payments to TENT Tokens`);
 
   $('#div_calculate').click(() => {
     const tokenIdHex = $('#div_tokenid').val();
@@ -3613,7 +3592,7 @@ app.init_block_page = (height) =>
       .then((total_txs_by_block) => {
         total_txs_by_block = app.util.extract_total(total_txs_by_block).c;
         $('#total_txs, #total_transactions').html(Number(total_txs_by_block).toLocaleString());
-        app.util.set_meta_description(`Block ${height} has ${$('#total_txs').html()} SLP transactions.`);
+        app.util.set_meta_description(`Block ${height} has ${$('#total_txs').html()} TENT Tokens transactions.`);
 
         if (total_txs_by_block === 0) {
           $('#block-transactions-table tbody').html('<tr><td>No transactions found.</td></tr>');
@@ -4043,7 +4022,7 @@ app.init_token_page = (tokenIdHex) =>
         app.util.decimal_formatting($('#token-stats-table tr.decimal-stats td'));
         $('#token-stats-table-container').removeClass('loading');
 
-        app.util.set_meta_description(`${token.tokenDetails.name} (${token.tokenDetails.symbol}) is a ${token.tokenDetails.versionType === 1 ? 'Type1' : token.tokenDetails.versionType === 129 ? 'NFT1-Group' : token.tokenDetails.versionType === 65 ? 'NFT1-Child' : ''} token built on SLP. There have been ${$('#tokenstats_valid_token_transactions').html()} transactions, and ${$('#tokenstats_valid_token_addresses').html()} addresses currently holding. ${$('#tokenstats_circulating_supply').html()} tokens are in circulation.`);
+        app.util.set_meta_description(`${token.tokenDetails.name} (${token.tokenDetails.symbol}) is a ${token.tokenDetails.versionType === 1 ? 'Type1' : token.tokenDetails.versionType === 129 ? 'NFT1-Group' : token.tokenDetails.versionType === 65 ? 'NFT1-Child' : ''} token built on TENTSLP. There have been ${$('#tokenstats_valid_token_transactions').html()} transactions, and ${$('#tokenstats_valid_token_addresses').html()} addresses currently holding. ${$('#tokenstats_circulating_supply').html()} tokens are in circulation.`);
 
 
         if (total_addresses === 0) {
@@ -4150,7 +4129,7 @@ app.init_token_page = (tokenIdHex) =>
           data.push({
             address: a.address.split(':')[1],
             token_balance: a.token_balance,
-            color: 'rgba(100, 167, 205, 1)',
+            color: 'rgba(7, 170, 208, 0.8)',
           });
         }
 
@@ -4633,7 +4612,7 @@ app.router = (whash, push_history = true) => {
       method = () => app.init_tx_page(key[0], key.slice(1));
       break;
     case 'bchtx':
-      app.util.set_title(`${i18next.t('bitcoin_cash_transaction')} ${key[0]} - ${i18next.t('slp_explorer')}`);
+      app.util.set_title(`${i18next.t('tent_transaction')} ${key[0]} - ${i18next.t('slp_explorer')}`);
       method = () => app.init_nonslp_tx_page(key[0], key.slice(1));
       break;
     case 'block':
