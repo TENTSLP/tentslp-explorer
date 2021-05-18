@@ -2730,7 +2730,7 @@ app.init_nonslp_tx_page = (txid, highlight=[], slp=null) =>
             input_amounts: input_amounts,
             slp: slp,
           }));
-          app.util.set_meta_description(`View information about the Bitcoin Cash transaction ${txid}`);
+          app.util.set_meta_description(`View information about the TENT transaction ${txid}`);
           app.util.attach_clipboard('main[role=main]');
           app.util.decimal_formatting($('#inputs-list tbody tr td:nth-child(3)'));
           app.util.decimal_formatting($('#outputs-list tbody tr td:nth-child(3)'));
@@ -3094,7 +3094,7 @@ app.init_all_tokens_page = () =>
 
       $('main[role=main]').html(app.template.all_tokens_page());
       $('#all-tokens-total-tokens').text(Number(all_tokens_count.t).toLocaleString());
-      app.util.set_meta_description(`View all ${$('#all-tokens-total-tokens').html()} tokens created with Simple Ledger Protocol on Bitcoin Cash`);
+      app.util.set_meta_description(`View all ${$('#all-tokens-total-tokens').html()} tokens created with TENT Simple Ledger Protocol on TENT`);
 
       const load_paginated_tokens = (limit, skip, done) => {
         app.slpdb.query(app.slpdb.all_tokens(limit, skip))
@@ -3622,7 +3622,7 @@ app.init_block_mempool_page = (height) =>
         height: 'mempool',
         most_recent_block_height: most_recent_block_height,
       }));
-      app.util.set_meta_description(`The Bitcoin Cash Mempool contains all transactions waiting to be confirmed in a block.`);
+      app.util.set_meta_description(`The TENT Mempool contains all transactions waiting to be confirmed in a block.`);
 
       const load_paginated_transactions = (limit, skip, done) => {
         app.slpdb.query(app.slpdb.txs_in_mempool(limit, skip))

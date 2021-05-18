@@ -1,6 +1,6 @@
 # SLP Token Explorer
 
-A open source block explorer for Bitcoin Cash tokens based on the Simple Ledger Protocol (SLP).
+A open source block explorer for TENT tokens based on the TENT Simple Ledger Protocol (TENTSLP).
 
 ![screenshot](/img/screenshot_large.jpg)
 
