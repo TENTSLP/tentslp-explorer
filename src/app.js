@@ -3427,7 +3427,7 @@ app.init_tx_page = (txid, highlight=[]) =>
                   target:  tx.tx.h,
                   color:   cytoscape_colors.txin,
                   kind:    'txin',
-                  val:     'BCH',
+                  val:     'TENT',
                   padding: 0,
                 }});
               }
@@ -3488,7 +3488,7 @@ app.init_tx_page = (txid, highlight=[]) =>
                   target:  m.e.a,
                   color:   cytoscape_colors.txout,
                   kind:    'txout',
-                  val:     app.util.format_bignum_bch_str(m.e.v) + ' BCH',
+                  val:     app.util.format_bignum_bch_str(m.e.v) + ' TENT',
                   padding: 0,
                 }});
               }
