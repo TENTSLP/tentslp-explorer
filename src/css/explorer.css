@@ -173,12 +173,12 @@ body {
 
 /* Header */
 header {
-    background-color: #06212A;
+    background-color: #000;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100000000;
-    border-bottom: 1px solid #054458;
+    border-bottom: 1px solid #000;
 }
 
 header.loading {
