@@ -1,40 +1,43 @@
 <% const sent_amount = app.extract_sent_amount_from_tx(tx); %>
 <tr>
-  <td>
+  <td class="nowrap">
     <div class="flex-vcenter">
       <a class="txid" href="/#tx/<%= tx.tx.h %>"><%= app.util.compress_txid(tx.tx.h) %></a>
+      <button class="copybtn" data-clipboard-text="<%= tx.tx.h %>"></button>
     </div>
   </td>
   <td>
     <div class="flex-vcenter">
-      <span class="token-icon-small" data-tokenid="<%= tx.slp.detail.tokenIdHex %>"></span>
-      <a href="#token/<%= tx.slp.detail.tokenIdHex %>">
-      <% if (tx.token[0].tokenDetails.symbol) { %>
-        <%= tx.token[0].tokenDetails.symbol %>
+      <span class="token-icon-small" data-tokenid="<%= tx.token[0].tokenDetails.tokenIdHex %>" data-tokengroup="<%= tx.token[0].nftParentId %>"></span>
+      <a href="/#token/<%= tx.token[0].tokenDetails.tokenIdHex %>">
+      <% if (tx.slp.detail.symbol || tx.slp.detail.name) { %>
+        <%= tx.slp.detail.name %> $<%= tx.slp.detail.symbol %>
+      <% } else if (tx.token[0].tokenDetails.symbol || tx.token[0].tokenDetails.tokenIdHex) { %>
+        <%= tx.token[0].tokenDetails.name %> $<%= tx.token[0].tokenDetails.symbol %>
       <% } else { %>
-        <span class="mono">[none]</span>
+        <span class="mono" data-i18n="none"></span>
       <% } %>
       </a>
     </div>
   </td>
   <td class="amount">
-      <%= sent_amount %>
+    <%= sent_amount %>
   </td>
   <td>
     <div>
-      <% if(tx.token[0].tokenDetails.versionType === 1) { %>Type1<% } %>
-      <% if(tx.token[0].tokenDetails.versionType === 129) { %>NFT1-Group<% } %>
-      <% if(tx.token[0].tokenDetails.versionType === 65) { console.log(tx); %>
-        <a href="/#token/<%= tx.token[0].nftParentId %>">NFT1-Child [view parent]</a>
+      <% if(tx.token[0].tokenDetails.versionType === 1) { %><span data-i18n="type1"></span><% } %>
+      <% if(tx.token[0].tokenDetails.versionType === 129) { %><span data-i18n="nft1_group"></span><% } %>
+      <% if(tx.token[0].tokenDetails.versionType === 65) { %>
+        <a href="/#token/<%= tx.token[0].nftParentId %>" data-i18n="nft1_child"></a>
       <% } %>
     </div>
   </td>
   <td>
     <div class="flex-vcenter">
       <% if (tx.blk) { %>
-        <a href="#block/<%= tx.blk.i %>"><%= tx.blk.i %></a>
+        <a href="/#block/<%= tx.blk.i %>"><%= tx.blk.i %></a>
       <% } else { %>
-        <a href="#block/mempool">Pending</a>
+        <a href="/#block/mempool" data-i18n="pending"></a>
       <% } %>
     </div>
   </td>
@@ -43,7 +46,7 @@
       <% if (tx.blk) { %>
         <%= new Date(tx.blk.t*1000).toLocaleString() %>
       <% } else { %>
-        Pending
+        <span data-i18n="pending"></span>
       <% } %>
     </div>
   </td>

@@ -1,31 +1,33 @@
 <tr>
-  <td><a class="txid" href="/#tx/<%= tx.graphTxn.txid %>"><%= app.util.compress_txid(tx.graphTxn.txid) %></a></td>
+  <td>
+    <a class="txid" href="/#tx/<%= tx.graphTxn.txid %>"><%= app.util.compress_txid(tx.graphTxn.txid) %></a>
+    <button class="copybtn" data-clipboard-text="<%= tx.graphTxn.txid %>"></button>
+  </td>
   <td class="amount">
     <%= app.util.format_bignum_str(total_burnt) %>
   </td>
   <td>
     <div class="flex-vcenter">
-      <span class="token-icon-small" data-tokenid="<%= tx.token[0].tokenDetails.tokenIdHex %>"></span>
+      <span class="token-icon-small" data-tokenid="<%= tx.token[0].tokenDetails.tokenIdHex %>" data-tokengroup="<%= tx.token[0].nftParentId %>"></span>
       <% if (tx.token[0].tokenDetails.symbol.length > 0) { %>
-        <a href="#token/<%= tx.token[0].tokenDetails.tokenIdHex %>"><%= tx.token[0].tokenDetails.name %> $<%= tx.token[0].tokenDetails.symbol %></a>
+        <a href="/#token/<%= tx.token[0].tokenDetails.tokenIdHex %>"><%= tx.token[0].tokenDetails.name %> $<%= tx.token[0].tokenDetails.symbol %></a>
       <% } else { %>
-        <span class="mono"><a href="#token/<%= tx.token[0].tokenDetails.tokenIdHex %>">[none]</a></span>
+        <span class="mono"><a href="/#token/<%= tx.token[0].tokenDetails.tokenIdHex %>" data-i18n="none"></a></span>
       <% } %>
     </div>
   </td>
   <td>
     <% if (tx.tx && tx.tx.blk) { %>
-      <a href="#block/<%= tx.tx.blk.i %>"><%= tx.tx.blk.i %></a>
+      <a href="/#block/<%= tx.tx.blk.i %>"><%= tx.tx.blk.i %></a>
     <% } else { %>
-      <a href="#block/mempool">Pending</a>
+      <a href="/#block/mempool" data-i18n="pending"></a>
     <% } %>
   </td>
   <td>
     <% if (tx.tx && tx.tx.blk) { %>
       <%= new Date(tx.tx.blk.t*1000).toLocaleString() %>
     <% } else { %>
-      Pending
+      <span data-i18n="pending"></span>
     <% } %>
   </td>
 </tr>
-

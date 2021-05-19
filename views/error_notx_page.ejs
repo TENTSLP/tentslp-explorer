@@ -1,12 +1,12 @@
 <div class="transaction_box">
-  <h1>Transaction Not Found</h1>
+  <h1 data-i18n="no_tx_header"></h1>
   <h6><%= txid %></h6>
-  <p>This transaction was not found in SLPDB or BitDB. It may have been very old or mispelled.</p>
+  <p data-i18n="no_tx_subtext"></p>
   <hr>
   <p>
-    <a class="button" onclick="window.history.back()" role="button">Go Back</a>
-    <a target="_blank" href="https://explorer.bitcoin.com/bch/tx/<%= txid %>">
-      <button type="button" class="button right">View on BCH Explorer</button>
+    <a class="button" onclick="window.history.back()" role="button" data-i18n="go_back"></a>
+    <a target="_blank" href="https://testnet-explorer.tent.app/tx/<%= txid %>">
+      <button type="button" class="button right" data-i18n="view_on_tent_explorer"></button>
     </a>
   </p>
 </div>

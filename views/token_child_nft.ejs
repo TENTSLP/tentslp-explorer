@@ -4,23 +4,24 @@
       <a class="tokenid" href="/#token/<%= token.tokenDetails.tokenIdHex %>">
         <%= app.util.compress_tokenid(token.tokenDetails.tokenIdHex) %>
       </a>
+      <button class="copybtn" data-clipboard-text="<%= token.tokenDetails.tokenIdHex %>"></button>
     </div>
   </td>
   <td>
     <div class="flex-vcenter">
-      <span class="token-icon-small" data-tokenid="<%= token.tokenDetails.tokenIdHex %>"></span>
-      <a href="#token/<%= token.tokenDetails.tokenIdHex %>">
+      <span class="token-icon-small" data-tokenid="<%= token.tokenDetails.tokenIdHex %>" data-tokengroup="<%= token.nftParentId %>"></span>
+      <a href="/#token/<%= token.tokenDetails.tokenIdHex %>">
       <% if (token.tokenDetails.symbol) { %>
         <%= token.tokenDetails.symbol %>
       <% } else { %>
-        <span class="mono">[none]</span>
+        <span class="mono" data-i18n="none"></span>
       <% } %>
       </a>
     </div>
   </td>
   <td>
     <div class="flex-vcenter">
-      <a href="#token/<%= token.tokenDetails.tokenIdHex %>">
+      <a href="/#token/<%= token.tokenDetails.tokenIdHex %>">
       <% if (token.tokenDetails.name) { %>
         <%= token.tokenDetails.name %>
       <% } else { %>
@@ -32,9 +33,9 @@
   <td>
     <div class="flex-vcenter">
       <% if (token.tokenStats.block_created) { %>
-        <a href="#block/<%= token.tokenStats.block_created %>"><%= token.tokenStats.block_created %></a>
+        <a href="/#block/<%= token.tokenStats.block_created %>"><%= token.tokenStats.block_created %></a>
       <% } else { %>
-        <a href="#block/mempool">Pending</a>
+        <a href="/#block/mempool" data-i18n="pending"></a>
       <% } %>
     </div>
   </td>

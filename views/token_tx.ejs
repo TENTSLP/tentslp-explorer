@@ -1,15 +1,24 @@
 <tr>
-  <td><a class="txid" href="/#tx/<%= tx.tx.h %>"><%= app.util.compress_txid(tx.tx.h) %></a></td>
-  <td><%= tx.slp.detail.transactionType[0].toUpperCase() + tx.slp.detail.transactionType.substr(1).toLowerCase() %></td>
+  <td>
+    <a class="txid" href="/#tx/<%= tx.tx.h %>"><%= app.util.compress_txid(tx.tx.h) %></a>
+    <button class="copybtn" data-clipboard-text="<%= tx.tx.h %>"></button>
+  </td>
+  <td class="capitalized"><%= app.util.transaction_type_trans(tx.slp.detail.transactionType) %></td>
   <td class="amount">
     <%= app.extract_sent_amount_from_tx(tx); %>
   </td>
   <td>
     <% if (tx.blk) { %>
-      <a href="#block/<%= tx.blk.i %>"><%= tx.blk.i %></a>
+      <a href="/#block/<%= tx.blk.i %>"><%= tx.blk.i %></a>
     <% } else { %>
-      <a href="#block/mempool">Pending</a>
+      <a href="/#block/mempool" data-i18n="pending"></a>
     <% } %>
   </td>
-  <td><% if (tx.blk) { %><%= new Date(tx.blk.t*1000).toLocaleString() %><% } else { %>Pending<% } %></td>
+  <td>
+    <% if (tx.blk) { %>
+      <%= new Date(tx.blk.t*1000).toLocaleString() %>
+    <% } else { %>
+      <span data-i18n="pending"></span>
+    <% } %>
+  </td>
 </tr>
