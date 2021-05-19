@@ -416,7 +416,7 @@ app.util = {
     const tokenIdHex = $el.data('tokenid');
     const tokenGroup = $el.data('tokengroup');
 
-    let icon_repo = 'https://testnet-tokens.tent.app';
+    let icon_repo = 'https://tokens.tent.app';
     if (tokenGroup && app.group_icon_repos.hasOwnProperty(tokenGroup)) {
         icon_repo = app.group_icon_repos[tokenGroup];
     }
@@ -796,7 +796,7 @@ app.slpdb = {
       return resolve(false);
     }
     const b64 = btoa_ext(JSON.stringify(query));
-    const url = 'https://ttentslpdb.tent.app/q/' + b64;
+    const url = 'https://tentslpdb.tent.app/q/' + b64;
 
     console.log(url);
 
@@ -2394,7 +2394,7 @@ app.slpstream = {
     }
 
     const b64 = btoa_ext(JSON.stringify(query));
-    const url = 'https://ttentslpstream.tent.app/s/' + b64;
+    const url = 'https://tentslpstream.tent.app/s/' + b64;
 
     const sse = new EventSource(url);
     sse.onmessage = (e) => fn(JSON.parse(e.data));
@@ -2436,7 +2436,7 @@ app.bitdb = {
       return resolve(false);
     }
     const b64 = btoa_ext(JSON.stringify(query));
-    const url = 'https://tbitdb.tent.app/q/' + b64;
+    const url = 'https://bitdb.tent.app/q/' + b64;
 
     console.log(url);
 
