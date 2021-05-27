@@ -9,22 +9,24 @@ If you would like to contribute to translating this site:
 
 * Copy `lang/en.json` to a new file. 
 * Translate the values in the file after the ":" symbol
-* Open a PR or issue here, or contact `@Blockparty_Sh` on Telegram
+* Open a PR or issue here, or contact `@Amitabha` on [Discord](https://discord.gg/78rVJcH)
 
 ## Fixing Error
 
 If you noticed something that could be worded better:
 
-* Look inside the `lang` folder for the corresponding [language code](https://www.andiamo.co.uk/resources/iso-language-codes/)
+* Look inside the `lang` folder for the corresponding [country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#AD)
 * Search for the phrase that has error
-* Open a PR or issue here, or contact `@Blockparty_Sh` on Telegram with the fixed line.
+* Open a PR or issue here, or contact `@Amitabha` on [Discord](https://discord.gg/78rVJcH) with the fixed line.
 
 
 # Thank you to translators
 
-* Bangla -- @NajmusSakib
-* Filipino -- @Sjbch
-* Hindi -- NajmusSakib
-* Spanish -- @kriker007
-* Yoruba -- @Osunbiyi
-* Portuguese -- @criptoph
+* [PL] Polish -- @Cyberart#1271
+* [ES] Spanish -- @catilinafiol#5571
+* [CZ] Czech -- @tryskac#1852
+* [RU] Russian -- @Amadyus#6274
+* [HU] Hungarian -- @AdiFortress#3533
+* [AE] Arabic -- @Bbkoopsta#5676
+* [FR] French -- @Bbkoopsta#5676
+* [KR] Korean -- @JM#4327

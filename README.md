@@ -1,8 +1,8 @@
-# SLP Token Explorer
+# TENT Token Explorer
 
 A open source block explorer for TENT tokens based on the TENT Simple Ledger Protocol (TENTSLP).
 
-![screenshot](/img/screenshot_large.jpg)
+![screenshot](public/img/screenshot.jpg)
 
 ## Translations
 
@@ -10,7 +10,7 @@ Please see [TRANSLATIONS.md](TRANSLATIONS.md).
 
 ## How to add Token Icon?
 
-Open a PR at https://github.com/kosinusbch/slp-token-icons
+Open a PR at https://github.com/TENTSLP/tentslp-token-icons
 
 ## Token Verification
 
@@ -39,4 +39,4 @@ npm start
 
 ## Credits
 
-[blockparty-sh](https://github.com/blockparty-sh) for all the dev work, [James Cramer](https://github.com/jcramer) ([simpleledger](https://github.com/simpleledger)), [kosinusbch](https://github.com/kosinusbch) for stylesheet, and [Evan](https://twitter.com/evanluza) from bitcoin.com for original design files
+[ciripel](https://github.com/ciripel) ([TENTSLP](https://github.com/TENTSLP)), [blockparty-sh](https://github.com/blockparty-sh) for all the dev work, [James Cramer](https://github.com/jcramer) ([simpleledger](https://github.com/simpleledger)), [kosinusbch](https://github.com/kosinusbch) for stylesheet, and [Evan](https://twitter.com/evanluza) from bitcoin.com for original design files

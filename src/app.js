@@ -70,11 +70,27 @@ app.template = Object.fromEntries(Object.entries({
 }).map(([k, v]) => ([k, ejs.compile(v)])));
 
 import translation_en from '../lang/en.json';
+import translation_ae from '../lang/ae.json';
+import translation_cz from '../lang/cz.json';
+import translation_es from '../lang/es.json';
+import translation_fr from '../lang/fr.json';
+import translation_hu from '../lang/hu.json';
+import translation_kr from '../lang/kr.json';
+import translation_pl from '../lang/pl.json';
+import translation_ru from '../lang/ru.json';
 const i18next_config = {
   fallbackLng: 'en',
   debug: false,
   resources: {
-    'en':    { translation: JSON.parse(translation_en) },
+    'en': { translation: JSON.parse(translation_en) },
+    'ae': { translation: JSON.parse(translation_ae) },
+    'cz': { translation: JSON.parse(translation_cz) },
+    'es': { translation: JSON.parse(translation_es) },
+    'fr': { translation: JSON.parse(translation_fr) },
+    'hu': { translation: JSON.parse(translation_hu) },
+    'kr': { translation: JSON.parse(translation_kr) },
+    'pl': { translation: JSON.parse(translation_pl) },
+    'ru': { translation: JSON.parse(translation_ru) },
   },
 };
 
