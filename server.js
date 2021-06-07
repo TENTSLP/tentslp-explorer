@@ -258,7 +258,7 @@ async function resetBrowser() {
     ],
     headless: true,
   });
-  await oldBrowser.close();
+  oldBrowser && oldBrowser.close();
 }
 
 (async () => {

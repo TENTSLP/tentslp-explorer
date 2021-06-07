@@ -75,6 +75,7 @@ import translation_cz from '../lang/cz.json';
 import translation_es from '../lang/es.json';
 import translation_fr from '../lang/fr.json';
 import translation_hu from '../lang/hu.json';
+import translation_it from '../lang/it.json';
 import translation_kr from '../lang/kr.json';
 import translation_pl from '../lang/pl.json';
 import translation_ru from '../lang/ru.json';
@@ -88,6 +89,7 @@ const i18next_config = {
     'es': { translation: JSON.parse(translation_es) },
     'fr': { translation: JSON.parse(translation_fr) },
     'hu': { translation: JSON.parse(translation_hu) },
+    'it': { translation: JSON.parse(translation_it) },
     'kr': { translation: JSON.parse(translation_kr) },
     'pl': { translation: JSON.parse(translation_pl) },
     'ru': { translation: JSON.parse(translation_ru) },

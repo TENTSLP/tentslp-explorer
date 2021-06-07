@@ -30,3 +30,4 @@ If you noticed something that could be worded better:
 * [AE] Arabic -- @Bbkoopsta#5676
 * [FR] French -- @Bbkoopsta#5676
 * [KR] Korean -- @JM#4327
+* [IT] Italian -- @Pippettando#5491
