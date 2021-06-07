@@ -9,36 +9,35 @@ const btoa = require('btoa');
 const fetch = require('node-fetch');
 
 const port = process.env.port || 8000;
-const host = process.env.port || "localhost";
 
 const app = express();
 let browser = null;
 
 const replaceLinksIfBot = (html) => html.replace(/href="\/#/g, 'href="/');
 
-const maxPageLifeTime = 1000*60 // close pages older than 60 seconds
-const pageScanFrequency = 1000*60 // scan pages every 60 seconds
+const maxPageLifeTime = 1000*60; // close pages older than 60 seconds
+const pageScanFrequency = 1000*60; // scan pages every 60 seconds
 
 const setIntervalAsync = (fn, ms) => {
   fn().then(() => {
-    setTimeout(() => setIntervalAsync(fn, ms), ms)
-  })
-}
+    setTimeout(() => setIntervalAsync(fn, ms), ms);
+  });
+};
 
 const closeOldPages = async () => {
   if (browser) {
     for (const page of await browser.pages()) {
       if (!await page.isClosed()) {
-        const pageTimestamp = await page.evaluate(`window.performance.now()`)
+        const pageTimestamp = await page.evaluate(`window.performance.now()`);
         if (pageTimestamp > maxPageLifeTime) {
           await page.close();
         }
       }
     }
   }
-}
+};
 
-setIntervalAsync(closeOldPages, pageScanFrequency)
+setIntervalAsync(closeOldPages, pageScanFrequency);
 
 
 const loadPage = async (res, req, url) => {
@@ -49,7 +48,7 @@ const loadPage = async (res, req, url) => {
     page = await browser.newPage();
 
     await page.setRequestInterception(true);
-    page.on('request', req => {
+    page.on('request', (req) => {
       const whitelist = ['document', 'script', 'xhr', 'fetch', 'image'];
       if (! whitelist.includes(req.resourceType())) {
         return req.abort();
@@ -59,13 +58,13 @@ const loadPage = async (res, req, url) => {
     });
 
     await page.goto(url, {
-      waitUntil: "networkidle0"
+      waitUntil: 'networkidle0',
     });
 
     content = await page.content();
     page.close();
-  } catch(e) {
-    if(page) {
+  } catch (e) {
+    if (page) {
       page.close();
     }
     console.log(e);
@@ -84,8 +83,9 @@ const loadPage = async (res, req, url) => {
   }
 
   return res.send(content);
-}
+};
 
+// eslint-disable-next-line new-cap
 const router = express.Router();
 
 // this is the normal website it is treated a bit differently to the others
@@ -104,16 +104,16 @@ router.get('/', (req, res) => {
 
 const genUrlParams = (req) => `?isbot=${isBot(req.header['user-agent'])}&lng=${req.query.lng || 'en'}`;
 
-router.get('/alltokens', async (req, res) => 
+router.get('/alltokens', async (req, res) =>
   loadPage(res, req, `http://127.0.0.1:${port}/${genUrlParams(req)}#alltokens`));
 
-router.get('/dividend', async (req, res) => 
+router.get('/dividend', async (req, res) =>
   loadPage(res, req, `http://127.0.0.1:${port}/${genUrlParams(req)}#dividend`));
 
-router.get('/tx/:item', async (req, res) => 
+router.get('/tx/:item', async (req, res) =>
   loadPage(res, req, `http://127.0.0.1:${port}/${genUrlParams(req)}#tx/${req.params.item}`));
 
-router.get('/bchtx/:item', async (req, res) => 
+router.get('/bchtx/:item', async (req, res) =>
   loadPage(res, req, `http://127.0.0.1:${port}/${genUrlParams(req)}#bchtx/${req.params.item}`));
 
 router.get('/token/:item', async (req, res) =>
@@ -122,114 +122,114 @@ router.get('/token/:item', async (req, res) =>
 router.get('/address/:item', async (req, res) =>
   loadPage(res, req, `http://127.0.0.1:${port}/${genUrlParams(req)}#address/${req.params.item}`));
 
-router.get('/block/:item', async (req, res) => 
+router.get('/block/:item', async (req, res) =>
   loadPage(res, req, `http://127.0.0.1:${port}/${genUrlParams(req)}#block/${req.params.item}`));
 
 router.get('/sitemap.xml', async (req, res) => {
   const tokens_query = {
-    "v": 3,
-    "q": {
-      "db": ["t"],
-      "find": {
-        "tokenStats.approx_txns_since_genesis": {
-          "$gte": 10
-        }
+    'v': 3,
+    'q': {
+      'db': ['t'],
+      'find': {
+        'tokenStats.approx_txns_since_genesis': {
+          '$gte': 10,
+        },
       },
-      "sort": {
-        "tokenStats.approx_txns_since_genesis": -1
+      'sort': {
+        'tokenStats.approx_txns_since_genesis': -1,
       },
-      "project": {
-        "_id": 0,
-        "tokenDetails.tokenIdHex": 1,
-        "tokenStats": 1
+      'project': {
+        '_id': 0,
+        'tokenDetails.tokenIdHex': 1,
+        'tokenStats': 1,
       },
-      "limit": 10000
-    }
+      'limit': 10000,
+    },
   };
-  
+
   const addresses_query = {
-    "v": 3,
-    "db": ["g"],
-    "q": {
-      "aggregate": [
+    'v': 3,
+    'db': ['g'],
+    'q': {
+      'aggregate': [
         {
-          "$match": {}
+          '$match': {},
         },
         {
-          "$limit": 1000000
+          '$limit': 1000000,
         },
         {
-          "$unwind": "$graphTxn.outputs"
+          '$unwind': '$graphTxn.outputs',
         },
         {
-          "$group": {
-            "_id": "$graphTxn.outputs.address",
-            "cnt": {
-              "$sum": 1
-            }
-          }
+          '$group': {
+            '_id': '$graphTxn.outputs.address',
+            'cnt': {
+              '$sum': 1,
+            },
+          },
         },
         {
-          "$sort": {
-            "cnt": -1
-          }
-        }
+          '$sort': {
+            'cnt': -1,
+          },
+        },
       ],
-      "sort": {
-        "cnt": -1
+      'sort': {
+        'cnt': -1,
       },
-      "limit": 10000
-    }
+      'limit': 10000,
+    },
   };
 
   const transactions_query = {
-    "v": 3,
-    "q": {
-      "db": ["c"],
-      "find": {},
-      "sort": {
-        "blk.i": -1
+    'v': 3,
+    'q': {
+      'db': ['c'],
+      'find': {},
+      'sort': {
+        'blk.i': -1,
       },
-      "project": {
-        "_id": -1,
-        "tx.h": 1
+      'project': {
+        '_id': -1,
+        'tx.h': 1,
       },
-      "limit": 10000
-    }
+      'limit': 10000,
+    },
   };
 
 
-  let response = "";
-  
+  let response = '';
+
   const slpdbQuery = (query) => fetch(`https://tentslpdb.tent.app/q/${btoa(JSON.stringify(query))}`)
   .then((data) => data.json());
-  
+
   response += `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://simpleledger.info/</loc></url>
-<url><loc>https://simpleledger.info/alltokens</loc></url>
-<url><loc>https://simpleledger.info/dividend</loc></url>
-<url><loc>https://simpleledger.info/block/mempool</loc></url>`;
-  
-  
+<url><loc>https://slp.tent.app/</loc></url>
+<url><loc>https://slp.tent.app/alltokens</loc></url>
+<url><loc>https://slp.tent.app/dividend</loc></url>
+<url><loc>https://slp.tent.app/block/mempool</loc></url>`;
+
+
   return slpdbQuery(tokens_query)
   .then((data) => {
-    for (let m of data.t) {
-      response += `<url><loc>https://simpleledger.info/token/${m.tokenDetails.tokenIdHex}</loc></url>\n`;
+    for (const m of data.t) {
+      response += `<url><loc>https://slp.tent.app/token/${m.tokenDetails.tokenIdHex}</loc></url>\n`;
     }
-  
+
     return slpdbQuery(addresses_query)
     .then((data) => {
-      for (let m of data.g) {
-        response += `<url><loc>https://simpleledger.info/address/${m._id}</loc></url>\n`;
+      for (const m of data.g) {
+        response += `<url><loc>https://slp.tent.app/address/${m._id}</loc></url>\n`;
       }
 
       return slpdbQuery(transactions_query)
       .then((data) => {
-        for (let m of data.c) {
-          response += `<url><loc>https://simpleledger.info/tx/${m.tx.h}</loc></url>\n`;
+        for (const m of data.c) {
+          response += `<url><loc>https://slp.tent.app/tx/${m.tx.h}</loc></url>\n`;
         }
-  
+
         response += `</urlset>`;
 
         res.set('Content-Type', 'application/xml');
@@ -242,8 +242,10 @@ router.get('/sitemap.xml', async (req, res) => {
 app.use('/', router);
 app.use('/', express.static('public'));
 
+// eslint-disable-next-line require-jsdoc
 async function resetBrowser() {
-  browser = await puppeteer.launch({
+  const oldBrowser = browser;
+    browser = await puppeteer.launch({
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
@@ -254,8 +256,9 @@ async function resetBrowser() {
       '--single-process',
       '--disable-gpu',
     ],
-    headless: true
+    headless: true,
   });
+  await oldBrowser.close();
 }
 
 (async () => {
