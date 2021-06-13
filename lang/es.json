@@ -1,20 +1,15 @@
 {
   "maintenance": "tent.app Actualmente esta en mantenimiento, esperando un mejor rendimiento.",
   "loading_dank_memes": "Cargando vista...",
-
   "homepage_btn_view_all_tokens": "Ver todos los Tokens",
   "homepage_btn_dividend_helper": "Ayudante de Ganancias",
-
   "footer_resources": "Recursos",
   "footer_links": "Enlaces",
   "footer_connect": "Connectar",
-
   "error_modal_header": "Oops... un error ha ocurrido!",
   "error_modal_subtext": "Disculpa por los inconvenientes, lo resolveremos tan pronto como sea posible. Si lo deseas puedes reportar este error en nuestra <a href=\"https://discord.gg/78rVJcH\">Discord</a>.<br>Volver a cargar la página que te ayudará.",
-
   "mainmenu_explorer": "Explorador",
   "mainmenu_all_tokens": "Todos los Tokens",
-
   "index_page_header": "Explorador de los Tokens de TENT ",
   "index_page_subheader": "Explorar los tokens basados en TENT",
   "index_page_subtext": "Para aprender más sobre los Tokens de TENT por favor visita nuestra comunidad en <a target=\"_blank\" href=\"https://discord.gg/78rVJcH\">Discord</a>.",
@@ -22,33 +17,25 @@
   "index_page_transaction_charts": "Gráficas de Transacciones",
   "index_page_token_burns": "Quema de Tokens",
   "index_page_exchanges": "Intercambios:",
-
   "address_page_sent_slp_transactions": "Transacciones de Tokens Enviados",
   "address_page_received_slp_transactions": "Transacciones de Tokens Recibidos ",
   "address_page_token_balances": "Saldo de Tokens",
   "address_page_transactions_chart": "Gráfico de Transacciones",
-
   "bad_address_page_header": "Error de Dirección",
   "bad_address_page_subtext": "Disculpa, no podemos dcodificar la dirección proporcionada.Revisa que no esté mal escrita.",
-
   "processing_tx_page_header": "Procesando Transacción del Token",
   "processing_tx_page_subtext": "TENTSLPDB está actualmente procesando esta transacción. Mientras tarda la carga puede durar mas tiempo para procesar las transacciones. Por favor intenta otra vez en unos minutos.",
-
   "no_tx_header": "No se encontró la transacción",
   "no_tx_subtext": "Esta transacción no fue encontrada en TENTSLPDB o BitDB. Debe sero muy vieja o debe estar mal escrita.",
-
   "404_page_header": "Error 404 :(",
   "404_page_subtext1": "Disculpa, no se puede encontrar la página que estas buscando.",
   "404_page_subtext2": "Por favor intenta otra busquedad o ve atrás en tu navegador, Este pudo haber sido un error. Si fue así, por favor <a href=\"https://discord.gg/78rVJcH\">report</a> it!",
-
   "block_page_view_all_block": "Ver todas las transacciones confirmadas en un bloque",
   "block_page_view_all_mempool": "Ver todas las transacciones esperando a ser confirmadas en un bloque",
-
   "dividend_helper_tokenid_subtext": "Qué tokens deben recibir los titulares de TENT",
   "dividend_helper_tent_subtext": "Qué cantidad de TENT se puede enviar entre los propietarios de tokens",
   "dividend_helper_ignore_addresses_subtext": "Introducir uno tt: dirección por línea",
   "dividend_helper_calculate_subtext": "Usar \"Pagar Dividendos\" con nueva moneda TENT",
-
   "slp_explorer": "Explorador de Tokens de TENT",
   "ignore_addresses": "Ignorar Direcciones",
   "dividend_helper": "Ayudante de Ganancias",
@@ -104,7 +91,6 @@
   "mint": "moneda",
   "genesis": "Inicio",
   "genesis_description": "TokenType1 Las transacciones desde el inicio no tienen entradas TENTSLP.<br>Las transacciones de NFT1 Child se visualizan en la entrada observando la Versión en Detalles del Token.",
-
   "tokenstats_valid_token_transactions": "Txns válidos desde la Génesis",
   "tokenstats_valid_token_utxos": "Token válido UTXOs",
   "tokenstats_valid_token_addresses": "Direcciones de Tokens válidas",

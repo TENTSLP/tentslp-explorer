@@ -1,20 +1,15 @@
 {
   "maintenance": "tent.app momentálně prochází údržbou, očekávejte snížený výkon.",
   "loading_dank_memes": "Náhled se načítá..",
-
   "homepage_btn_view_all_tokens": "Zobrazit Všechny Tokeny",
   "homepage_btn_dividend_helper": "Průvodce Dividend",
-
   "footer_resources": "Zdroje",
   "footer_links": "Linky",
   "footer_connect": "Připojit",
-
   "error_modal_header": "Ups... vyskytla se chyba!",
   "error_modal_subtext": "Omlouváme se za nepříjemnosti, co nejdříve se na to podíváme. Pokud chcete, nareportujte tuto chybu v <a href=\"https://discord.gg/78rVJcH\">Discord</a>.<br>Obnova stránky může pomoci.",
-
   "mainmenu_explorer": "Průzkumník",
   "mainmenu_all_tokens": "Všechny Tokeny",
-
   "index_page_header": "TENT Token průzkumník ",
   "index_page_subheader": "Prozkoumat Tokeny postavené na TENT",
   "index_page_subtext": "Chcete-li se dozvědět více o TENT Tokenech, navštivte naši komunitu na <a target=\"_blank\" href=\"https://discord.gg/78rVJcH\">Discord</a>.",
@@ -22,33 +17,25 @@
   "index_page_transaction_charts": "Grafy Transakcí",
   "index_page_token_burns": "Spálené Tokeny",
   "index_page_exchanges": "Směnárny:",
-
   "address_page_sent_slp_transactions": "Odeslané Tokeny ",
   "address_page_received_slp_transactions": "Přijaté Tokeny ",
   "address_page_token_balances": "Zůstatek Tokenů",
   "address_page_transactions_chart": "Grafy Transakcí",
-
   "bad_address_page_header": "Nesprávná adresa",
   "bad_address_page_subtext": "Litujeme, zadanou adresu nemůžeme dekódovat. Zkontrolujte prosím, jestli v ní není chyba.",
-
   "processing_tx_page_header": "Zpracování Transakce Tokenu",
   "processing_tx_page_subtext": "TENTSLPDB aktuálně zpracovává tuto transakci. Během vysokého zatížení může zpracování transakcí trvat déle. Zkuste to prosím za chvíli.",
-
   "no_tx_header": "Transakce nenalezena",
   "no_tx_subtext": "Tato transakce nebyla nalezena v TENTSLPDB nebo BitDB. Může být buď příliš stará, nebo je v ní chyba.",
-
   "404_page_header": "404 Nenalezeno:(",
   "404_page_subtext1": "Litujeme, požadovaná stránka nebyla nalezena.",
   "404_page_subtext2": "Zkuste prosím nové vyhledávání, nebo se vraťe zpět ve svém prohlížeči, toto může být chyba. Pokud ano, prosím <a href=\"https://discord.gg/78rVJcH\">nareportujte</a> ji!",
-
   "block_page_view_all_block": "Zobrazit všechny potvrzené transakce v bloku",
   "block_page_view_all_mempool": "Zobrazit všechny transakce čekající na potvrzení v bloku",
-
   "dividend_helper_tokenid_subtext": "kteří držitelé tokenů mají obdržet TENT",
   "dividend_helper_tent_subtext": "kolik TENT se má odeslat držitelům tokenů",
   "dividend_helper_ignore_addresses_subtext": "Zadejte jeden tt: jedna adresa na řádku",
   "dividend_helper_calculate_subtext": "Použijte \"Vyplatit Dividendy\" s TENT Mint",
-
   "slp_explorer": "TENT Token průzkumník",
   "ignore_addresses": "Ignorovat Adresy",
   "dividend_helper": "Průvodce Dividend",
@@ -91,7 +78,7 @@
   "child_nfts": "Podřízená NFT",
   "mint_history": "Historie Mintů",
   "burn_history": "Historie Pálení",
-    "pending": "Čeká",
+  "pending": "Čeká",
   "none": "[žádný]",
   "rich_list": "Seznam Držitelů nejvíce Tokenů",
   "stats": "Statistiky",
@@ -104,7 +91,6 @@
   "mint": "mint",
   "genesis": "Počátek",
   "genesis_description": "TokenType1 prvotní transakce nemají žádné TENTSLP vstupy.<br>NFT1 Podřízené transakce mohou vidět vstup z řádku Verze v podokně Podrobnosti tokenu.",
-
   "tokenstats_valid_token_transactions": "Platné Transakce od počátku",
   "tokenstats_valid_token_utxos": "Platné Tokeny UTXOs",
   "tokenstats_valid_token_addresses": "Platné Adresy Tokenů",

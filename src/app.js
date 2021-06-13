@@ -72,6 +72,7 @@ app.template = Object.fromEntries(Object.entries({
 import translation_en from '../lang/en.json';
 import translation_ae from '../lang/ae.json';
 import translation_cz from '../lang/cz.json';
+import translation_de from '../lang/de.json';
 import translation_es from '../lang/es.json';
 import translation_fr from '../lang/fr.json';
 import translation_hu from '../lang/hu.json';
@@ -86,6 +87,7 @@ const i18next_config = {
     'en': { translation: JSON.parse(translation_en) },
     'ae': { translation: JSON.parse(translation_ae) },
     'cz': { translation: JSON.parse(translation_cz) },
+    'de': { translation: JSON.parse(translation_de) },
     'es': { translation: JSON.parse(translation_es) },
     'fr': { translation: JSON.parse(translation_fr) },
     'hu': { translation: JSON.parse(translation_hu) },

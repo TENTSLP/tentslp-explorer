@@ -1,20 +1,15 @@
 {
   "maintenance": "tent.app в настоящее время на обслуживании, возможно снижение производительности.",
   "loading_dank_memes": "Загрузка...",
-
   "homepage_btn_view_all_tokens": "Просмотреть все токены",
   "homepage_btn_dividend_helper": "Помощник по дивидендам",
-
   "footer_resources": "Ресурсы",
   "footer_links": "Ссылки",
   "footer_connect": "Соединение",
-
   "error_modal_header": "Упс... произошла ошибка!",
   "error_modal_subtext": "Извините за неудобства, мы разберемся с этим как можно скорее. Если вы хотите, вы можете сообщить об этой ошибке в нашем <a href=\"https://discord.gg/78rVJcH\">Discord</a>.<br>Перезагрузка страницы должна помочь.",
-
   "mainmenu_explorer": "Обозреватель",
   "mainmenu_all_tokens": "Все токены",
-   
   "index_page_header": "TENT токен обозреватель",
   "index_page_subheader": "Просмотрет токенов, построенных на сети TENT",
   "index_page_subtext": "Что бы узнать больше, посетите наше сообщество  <a target=\"_blank\" href=\"https://discord.gg/78rVJcH\">Discord</a>.",
@@ -22,33 +17,25 @@
   "index_page_transaction_charts": "Графики транзакций",
   "index_page_token_burns": "Сжигание токенов",
   "index_page_exchanges": "Обмены:",
-
   "address_page_sent_slp_transactions": "Транзакции отправленных токенов ",
   "address_page_received_slp_transactions": "Транзакции полученных токенов ",
   "address_page_token_balances": "Баланс токенов",
   "address_page_transactions_chart": "Графики транзакций",
-
   "bad_address_page_header": "Не правильный адрес",
   "bad_address_page_subtext": "К сожалению, мы не можем расшифровать указанный адрес. Проверьте дважды, что в нем нет ошибок.",
-
   "processing_tx_page_header": "Обработка транзакции токена",
   "processing_tx_page_subtext": "TENTSLPDB обрабатывает транзакцию. Во время высокой нагрузки обработка транзакций может занять больше времени. Пожалуйста, повторите попытку чуть позже.",
-
   "no_tx_header": "Транзакция не найдена",
   "no_tx_subtext": "Данная транзакция не найдена в TENTSLPDB или BitDB. Возможно она не правильно введена или очень старая.",
-
   "404_page_header": "404 не найдено :(",
   "404_page_subtext1": "Измините, не возможно найти страницу которую вы ищите.",
   "404_page_subtext2": "Пожалуйста, попробуйте поискать иначе или нажмите \"назад\" в вашем браузере, возможно это баг. Если все правильно, пожалуйста <a href=\"https://discord.gg/78rVJcH\">report</a> it!",
-
   "block_page_view_all_block": "Просмотреть всех подтвержденных транзакций в блоке",
   "block_page_view_all_mempool": "Просмотреть все не подтвежденные транзакции в блоке",
-
   "dividend_helper_tokenid_subtext": "какие держатели токенов должны получать TENT",
   "dividend_helper_tent_subtext": "сколько TENT отправить между держателями токенов",
   "dividend_helper_ignore_addresses_subtext": "укажите один tt: адрес в строчке",
   "dividend_helper_calculate_subtext": "Успользуйте \"Выплатить дивиденды\" с TENT Mint",
-
   "slp_explorer": "TENT токен обозреватель",
   "ignore_addresses": "Игнорируемые адреса",
   "dividend_helper": "Помощник по дивидендам",
@@ -104,7 +91,6 @@
   "mint": "Создание монетt",
   "genesis": "Происхождения",
   "genesis_description": "TokenType1 происхождение транзакций не имеют ввода TENTSLP.<br>NFT1 Ввод дочерней транзакции можно посмотреть в панели деталий по токенам.",
-
   "tokenstats_valid_token_transactions": "Доступные Txns происхождения",
   "tokenstats_valid_token_utxos": "Доступные токены UTXOs",
   "tokenstats_valid_token_addresses": "Доступные токен адреса",

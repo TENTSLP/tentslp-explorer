@@ -1,20 +1,15 @@
 {
   "maintenance": "يخضع tent.app للصيانة حاليًا ، وتوقع أداء متدهور.",
   "loading_dank_memes": "عرض التحميل...",
-
   "homepage_btn_view_all_tokens": "عرض كل الرموز",
   "homepage_btn_dividend_helper": "مساعد توزيع الأرباح",
-
   "footer_resources": "الموارد",
   "footer_links": "الروابط",
   "footer_connect": "الاتصال",
-
   "error_modal_header": "عفوًا ... حدث خطأ!",
   "error_modal_subtext": "نأسف للإزعاج ، سننظر في هذا في أقرب وقت ممكن. إذا كنت ترغب في ذلك ، يمكنك الإبلاغ عن هذا الخطأ في <a href=\"https://discord.gg/78rVJcH\">Discord</a>.<br>إعادة تحميل الصفحة قد يساعد.",
-
   "mainmenu_explorer": "المستكشف",
   "mainmenu_all_tokens": "جميع الرموز",
-   
   "index_page_header": "TENT مستكشف رموز",
   "index_page_subheader": "تصفح الرموز المبنية على TENT",
   "index_page_subtext": "لمعرفة المزيد عن TENT Tokens ، يرجى زيارة مجتمعنا في <a target=\"_blank\" href=\"https://discord.gg/78rVJcH\">Discord</a>.",
@@ -22,33 +17,25 @@
   "index_page_transaction_charts": "مخططات المعاملات",
   "index_page_token_burns": "حرق الرموز",
   "index_page_exchanges": "التبادلات:",
-
   "address_page_sent_slp_transactions": "معاملات الرموز المرسلة ",
   "address_page_received_slp_transactions": "معاملات الرموز المستلمة ",
   "address_page_token_balances": "أرصدة الرموز",
   "address_page_transactions_chart": "مخطط المعاملات",
-
   "bad_address_page_header": "عنوان سيء",
   "bad_address_page_subtext": "عذرا ، لا يمكننا فك العنوان المعطى. تحقق مرة أخرى من عدم وجود أخطاء إملائية.",
-
   "processing_tx_page_header": "معالجة عملية الرمز المميز",
   "processing_tx_page_subtext": "تقوم TENTSLPDB حاليًا بمعالجة هذه المعاملة. أثناء الحمل العالي ، قد يستغرق الأمر وقتًا أطول لمعالجة المعاملات. يرجى المحاولة مرة أخرى في بضع لحظات.",
-
   "no_tx_header": "لم يتم العثور على الصفقة",
   "no_tx_subtext": "لم يتم العثور على هذه المعاملة في TENTSLPDB أو BitDB. قد يكون قديمًا جدًا أو مكتوبًا بشكل خاطئ.",
-
   "404_page_header": "404 غير موجود :(",
   "404_page_subtext1": "عذرا ، لا يمكن العثور على الصفحة التي تبحث عنها.",
   "404_page_subtext2": "يرجى محاولة بحث آخر أو الرجوع إلى متصفحك ، فقد يكون هذا خطأ. إذا كان كذلك ، من فضلك <a href=\"https://discord.gg/78rVJcH\">أبلغ</a> عنه!",
-
   "block_page_view_all_block": "عرض جميع المعاملات المؤكدة في كتلة",
   "block_page_view_all_mempool": "عرض جميع المعاملات التي تنتظر تأكيدها في كتلة",
-
   "dividend_helper_tokenid_subtext": "الذي يجب أن يتلقى حاملو الرمز المميز TENT",
   "dividend_helper_tent_subtext": "كم ترسل TENT بين حاملي التوكنات",
   "dividend_helper_ignore_addresses_subtext": "أدخل tt واحد: العنوان في كل سطر",
   "dividend_helper_calculate_subtext": "استخدم \"دفع توزيعات الأرباح\" مع TENT Mint",
-
   "slp_explorer": "TENT مستكشف رموز",
   "ignore_addresses": "تجاهل العناوين",
   "dividend_helper": "مساعد توزيع الأرباح",
@@ -104,7 +91,6 @@
   "mint": "سك",
   "genesis": "Genesis",
   "genesis_description": "TokenType1 لا تحتوي معاملات genesis على أي مدخلات TENTSLP.<br>يمكن المعاملات NFT1 الطفل رؤية المدخلات من يبحث في الصف الإصدار في رمز جزء التفاصيل.",
-
   "tokenstats_valid_token_transactions": "Txns سارية منذ سفر التكوين",
   "tokenstats_valid_token_utxos": "UTXOs رمز صالح",
   "tokenstats_valid_token_addresses": "عناوين رمزية صالحة",

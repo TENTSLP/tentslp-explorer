@@ -1,20 +1,15 @@
 {
   "maintenance": "tent.app currently undergoing maintenance, expect degraded performance.",
   "loading_dank_memes": "Loading view...",
-
   "homepage_btn_view_all_tokens": "View All Tokens",
   "homepage_btn_dividend_helper": "Dividend Helper",
-
   "footer_resources": "Resources",
   "footer_links": "Links",
   "footer_connect": "Connect",
-
   "error_modal_header": "Oops... an error occured!",
   "error_modal_subtext": "Sorry for the inconvenience, we will look into this as soon as possible. If you'd like, you can report this error in our <a href=\"https://discord.gg/78rVJcH\">Discord</a>.<br>Reloading the page might help.",
-
   "mainmenu_explorer": "Explorer",
   "mainmenu_all_tokens": "All Tokens",
-   
   "index_page_header": "TENT Tokens Explorer",
   "index_page_subheader": "Browse tokens built on TENT",
   "index_page_subtext": "To learn more about TENT Tokens please visit our comunity in <a target=\"_blank\" href=\"https://discord.gg/78rVJcH\">Discord</a>.",
@@ -22,33 +17,25 @@
   "index_page_transaction_charts": "Transactions Charts",
   "index_page_token_burns": "Token Burns",
   "index_page_exchanges": "Exchanges:",
-
   "address_page_sent_slp_transactions": "Sent Tokens Transactions ",
   "address_page_received_slp_transactions": "Received Tokens Transactions ",
   "address_page_token_balances": "Token Balances",
   "address_page_transactions_chart": "Transactions Chart",
-
   "bad_address_page_header": "Bad Address",
   "bad_address_page_subtext": "Sorry, we cannot decode the address given. Double check it isn't misspelled.",
-
   "processing_tx_page_header": "Processing Token Transaction",
   "processing_tx_page_subtext": "TENTSLPDB is currently processing this transaction. During high load it may take longer to process transactions. Please try again in a few moments.",
-
   "no_tx_header": "Transaction Not Found",
   "no_tx_subtext": "This transaction was not found in TENTSLPDB or BitDB. It may have been very old or mispelled.",
-
   "404_page_header": "404 Not Found :(",
   "404_page_subtext1": "Sorry, can't find the page you were looking for.",
   "404_page_subtext2": "Please try another search or go back in your browser, this may have been a bug. If it was, please <a href=\"https://discord.gg/78rVJcH\">report</a> it!",
-
   "block_page_view_all_block": "View all transactions confirmed in a block",
   "block_page_view_all_mempool": "View all transactions waiting to be confirmed in a block",
-
   "dividend_helper_tokenid_subtext": "which token's holders should receive TENT",
   "dividend_helper_tent_subtext": "how much TENT to send between the token holders",
   "dividend_helper_ignore_addresses_subtext": "enter one tt: address per line",
   "dividend_helper_calculate_subtext": "Use \"Pay Dividends\" with TENT Mint",
-
   "slp_explorer": "TENT Tokens Explorer",
   "ignore_addresses": "Ignore Addresses",
   "dividend_helper": "Dividend Helper",
@@ -104,7 +91,6 @@
   "mint": "mint",
   "genesis": "Genesis",
   "genesis_description": "TokenType1 genesis transactions do not have any TENTSLP inputs.<br>NFT1 Child transactions can see the input from looking at the Version row in the Token Details pane.",
-
   "tokenstats_valid_token_transactions": "Valid Txns Since Genesis",
   "tokenstats_valid_token_utxos": "Valid Token UTXOs",
   "tokenstats_valid_token_addresses": "Valid Token Addresses",

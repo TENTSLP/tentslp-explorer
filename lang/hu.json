@@ -1,20 +1,15 @@
 {
   "maintenance": "tent.app jelenleg karbantartás alatt, használata közben hiba léphet fel.",
   "loading_dank_memes": "Nézet betöltése...",
-
   "homepage_btn_view_all_tokens": "Az összes Token megtekintése",
   "homepage_btn_dividend_helper": "Osztaléksegítő",
-
   "footer_resources": "Erőforrások",
   "footer_links": "Linkek",
   "footer_connect": "Csatlakozás",
-
   "error_modal_header": "Hoppá.... Hiba történt!",
   "error_modal_subtext": "Elnézést a kellemetlenségért, utánanézünk a hibának amint csak lehet. Ha szeretnéd, a discord csatornánkon tudod jelenteni: <a href=\"https://discord.gg/78rVJcH\">Discord</a>.<br>Az oldal újratöltése segíthet.",
-
   "mainmenu_explorer": "Explorer",
   "mainmenu_all_tokens": "Összes Token",
-
   "index_page_header": "TENT Token Explorer",
   "index_page_subheader": "Tallózás a TENT-en alapuló Tökenek közt",
   "index_page_subtext": "Ha többet szeretnél tudni a TENT Tokenekről látogass el ide: <a target=\"_blank\" href=\"https://discord.gg/78rVJcH\">Discord</a>.",
@@ -22,33 +17,25 @@
   "index_page_transaction_charts": "Tranzakciók grafikonjai",
   "index_page_token_burns": "Elégő Tokenek",
   "index_page_exchanges": "Váltók:",
-
   "address_page_sent_slp_transactions": "Elutalt Tokenek tranzakciói ",
   "address_page_received_slp_transactions": "Fogadott Tokenek tranzakciói ",
   "address_page_token_balances": "Token egyenleg ",
   "address_page_transactions_chart": "Tranzakciók grafikonjai",
-
   "bad_address_page_header": "Rossz cím",
   "bad_address_page_subtext": "Elnézést de nem tudjuk dekódolni a megadott címet. Ellenőrzid mégegyszer nem írtad-e rosszul.",
-
   "processing_tx_page_header": "Token tranzakció feldolgozása",
   "processing_tx_page_subtext": "TENTSLPDB jelenleg a tranzakciót dolgozza fel. A nagy leterheltség miatt hosszabb ideig tarthat a tranzakció. Próbáld meg egy kicsit később.",
-
   "no_tx_header": "Tranzakció nem található",
   "no_tx_subtext": "Ez a tranzakció nem található sem a TENTSLPDB-ben sem a BitDB-ben. Nagyon régi lehet, vagy el van írva.",
-
   "404_page_header": "404 Nem található :(",
   "404_page_subtext1": "Elnézést de a keresett oldal nem található.",
   "404_page_subtext2": "Kérlek próbálj egy másik keresést vagy térj vissza a böngésződbe. Ez lehet, hogy egy rendszerhiba. Ha az, jelentsd itt!: <a href=\"https://discord.gg/78rVJcH\">report</a>",
-
   "block_page_view_all_block": "Az összes adott blokk által elfogadott tranzakció megtekintése",
   "block_page_view_all_mempool": "Az összes adott blokk által elfogadásra váró tranzakció megtekintése",
-
   "dividend_helper_tokenid_subtext": "Melyik Token tulajdonosnak kellene kapnia TENT-et",
   "dividend_helper_tent_subtext": "Mennyi TENT legyen szétosztva a Token tulajok között",
   "dividend_helper_ignore_addresses_subtext": "andj meg egy  tt: cím soronként",
   "dividend_helper_calculate_subtext": "Elindítani \"Osztalék fizetést\" előállított TENT-el",
-
   "slp_explorer": "TENT Token Explorer",
   "ignore_addresses": "Címek figyelmen kívül hagyása",
   "dividend_helper": "Osztaléksegítő",
@@ -104,7 +91,6 @@
   "mint": "előállítás",
   "genesis": "Keletkezés",
   "genesis_description": "TokenType1 létrehozó tranzakciónak nincs TENTSLP bemenő jele.<br>NFT1 Alkotások tranzakciói látják a bemenetet a verzió soraból a Tokenek információs táblájáról.",
-
   "tokenstats_valid_token_transactions": "Valós Txns a keletkezés óta",
   "tokenstats_valid_token_utxos": "Valós Token UTXO-k",
   "tokenstats_valid_token_addresses": "Valós Token címek",

@@ -31,3 +31,4 @@ If you noticed something that could be worded better:
 * [FR] French -- @Bbkoopsta#5676
 * [KR] Korean -- @JM#4327
 * [IT] Italian -- @Pippettando#5491
+* [DE] German -- @pocal#0496

@@ -1,20 +1,15 @@
 {
   "maintenance": "tent.app actuellement en cours de maintenance, attendez une dégradation des performances.",
   "loading_dank_memes": "Chargement de la vue ...",
-
   "homepage_btn_view_all_tokens": "Afficher Tous Les Jetons",
   "homepage_btn_dividend_helper": "Aide Aux Dividendes",
-
   "footer_resources": "Ressources",
   "footer_links": "Liens",
   "footer_connect": "Connecter",
-
   "error_modal_header": "Oops... Une erreur est survenue!",
   "error_modal_subtext": "Désolé pour le désagrément, nous examinerons cela dans les plus brefs délais. Si vous le souhaitez, vous pouvez signaler cette erreur dans notre <a href=\"https://discord.gg/78rVJcH\">Discord</a>.<br>Le rechargement de la page peut aider.",
-
   "mainmenu_explorer": "Explorateur",
   "mainmenu_all_tokens": "Tous Les Jetons",
-   
   "index_page_header": "TENT Explorateur De Jetons",
   "index_page_subheader": "Parcourir les jetons basés sur TENT",
   "index_page_subtext": "Pour en savoir plus sur les tokens TENT, veuillez visiter notre communauté à <a target=\"_blank\" href=\"https://discord.gg/78rVJcH\">Discord</a>.",
@@ -22,33 +17,25 @@
   "index_page_transaction_charts": "Graphiques Des Transactions",
   "index_page_token_burns": "Brûlures De Jetons",
   "index_page_exchanges": "Échanges:",
-
   "address_page_sent_slp_transactions": "Transactions De Jetons Envoyés ",
   "address_page_received_slp_transactions": "Transactions De Jetons Reçues ",
   "address_page_token_balances": "Soldes De Jetons",
   "address_page_transactions_chart": "Graphique Des Transactions",
-
   "bad_address_page_header": "Mauvaise Adresse",
   "bad_address_page_subtext": "Désolé, nous ne pouvons pas décoder l'adresse fournie. Vérifiez qu'il n'est pas mal orthographié.",
-
   "processing_tx_page_header": "Traitement Des Transactions De Jetons",
   "processing_tx_page_subtext": "TENTSLPDB est en cours de traitement de cette transaction. En cas de charge élevée, le traitement des transactions peut prendre plus de temps. Veuillez réessayer dans quelques instants.",
-
   "no_tx_header": "Transaction Introuvable",
   "no_tx_subtext": "Cette transaction n'a pas été trouvée dans TENTSLPDB ou BitDB. Il peut avoir été très ancien ou mal orthographié.",
-
   "404_page_header": "404 Pas Trouvé :(",
   "404_page_subtext1": "Désolé, impossible de trouver la page que vous recherchez.",
   "404_page_subtext2": "S'il vous plaît essayer une nouvelle recherche ou revenir en arrière dans votre navigateur, cela peut avoir été un bug. Si c'était le cas, s'il vous plaît <a href=\"https://discord.gg/78rVJcH\">le</a> signaler!",
-
   "block_page_view_all_block": "Afficher toutes les transactions confirmées dans un bloc",
   "block_page_view_all_mempool": "Afficher toutes les transactions en attente de confirmation dans un bloc",
-
   "dividend_helper_tokenid_subtext": "quels détenteurs de jetons devraient recevoir TENT",
   "dividend_helper_tent_subtext": "combien de TENTE envoyer entre les détenteurs de jetons",
   "dividend_helper_ignore_addresses_subtext": "entrez un tt: adresse par ligne",
   "dividend_helper_calculate_subtext": "Utiliser \"Payer Des Dividendes\" avec TENT Monnayage",
-
   "slp_explorer": "Explorateur De Jetons TENT",
   "ignore_addresses": "Ignorer Les Adresses",
   "dividend_helper": "Aide Aux Dividendes",
@@ -104,7 +91,6 @@
   "mint": "Monnayer",
   "genesis": "Genesis",
   "genesis_description": "TokenType1 Les transactions genesis n'ont pas d'entrées TENTSLP.<br>NFT1 Les transactions enfants peuvent voir l'entrée en regardant la ligne Version dans le volet Détails du jeton.",
-
   "tokenstats_valid_token_transactions": "Txns Valides Depuis Genesis",
   "tokenstats_valid_token_utxos": "UTXO De Jeton Valides",
   "tokenstats_valid_token_addresses": "Adresses De Jetons Valides",
