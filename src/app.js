@@ -4172,7 +4172,7 @@ app.init_token_page = (tokenIdHex) =>
         try {
           Plotly.newPlot('plot-token-address-rich', [{
             x: data.map((v) => (v.address !== 'Other') ?
-              `<a href="/#address/ttest:${v.address}">${v.address}</a>` :
+              `<a href="/#address/tt:${v.address}">${v.address}</a>` :
               v.address,
             ),
             y: data.map((v) => v.token_balance),
